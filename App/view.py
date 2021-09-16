@@ -23,6 +23,7 @@
 import config as cf
 import sys
 import controller
+import sys
 from DISClib.ADT import list as lt
 assert cf
 
@@ -33,6 +34,9 @@ Presenta el menu de opciones  y  por cada seleccion
 se hace la solicitud al controlador para ejecutar la
 operación solicitada
 """
+
+default_limit = 1000
+sys.setrecursionlimit(default_limit*10)
 
 
 def printMenu():
